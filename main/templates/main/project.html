@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="project-page">
+    {% for obj in object_list %}
+    <div class="project-container">
+        <a href="{% url 'main:project' slug=obj.slug %}" target="_blank">
+        <div class="project-item">
+            <img src="{{obj.image.url}}" alt="Thumbnail" class="project-pic">
+            <div class="project-content">
+                <h4>{{obj.name}}</h4>
+                <small>{{obj.description}}</small> 
+            </div>
+        </div>
+        </a> 
+    </div>
+    {% endfor %}
+</main>
+{% endblock %}

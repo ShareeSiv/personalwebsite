@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="project-detail">
+    <div class="article-title">
+        <h1>{{object.name}}</h1>
+        <p>{{object.description}}</p>
+    </div>
+    <article>
+        <div class="author-info">
+            <p>Sharavanan Sivaraya · </p>
+            <p>{{object.date}}</p>
+        </div>
+        <img src="{{object.image.url}}" alt="Thumbnail" class="article-img">
+        <div class="article-body">
+            {{object.body|safe}}
+        </div>
+    </article>
+</main>
+
+{% endblock %}

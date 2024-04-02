@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- WELCOME SECTION START-->
+<main> 
+  
+
+  <section class="welcome-section">
+    <h1>Welcome!</h1>
+    <p class="description"> I am Sharavanan (you can also call me Sharee) and I am a 1st year engineering student at the Univeristy of Cambridge.</p>
+  </section>
+  <!--WELCOME SECTION ENDS-->
+
+  <!--TIMELINE STARTS-->
+  <section class="overview">
+    <h2 class="overview-title">Overview</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <img src="{% static 'images/UniCam.webp' %}" alt="Univeristy of Cambridge Coats of Arms">
+        <div class="timeline-content">
+          <h2>Jesus College, Univeristy of Cambridge</h2>
+          <small>2023 - Present</small>
+          <p>Engineering (MEng). Courses: electronics, mechanics, linear systems, structures, electrical, thermodynamics, materials and mathematics</p>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="timeline-item right-item">
+        <img src="{% static 'images/Newsixthbath.jpg' %}" alt="The New Sixth Bath logo">
+        <div class="timeline-content">
+          <h2>The New Sixth Bath</h2>
+          <small>2021 - 2023</small>
+          <p>A*A*A*A* in Maths, Further Maths (Self-taught), Physics and Chemistry</p>
+          <span class="right-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <img src="{% static 'images/StGregs.png' %}" alt="St Gregorys Bath logo">
+        <div class="timeline-content">
+          <h2>St Gregorys Bath</h2>
+          <small>2016 - 2021</small>
+          <p>5 Grade 9’s (Mathematics, Physics, Biology, Chemistry, French), 3 Grade 8’s (Computer Science, RE and English Literature) and Grade 7 in English Language</p>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+    </div>
+
+  
+
+  </section>
+  
+</main>
+{% endblock %}
