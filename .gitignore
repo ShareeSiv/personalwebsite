@@ -1,0 +1,13 @@
+mediafiles
+personalwebsite/.env
+.dockerignore
+db.sqlite3
+staticfiles
+media
+.venv
+fly.toml
+Dockerfile
+manage.py
+static
+staticfiles
+manage.py
