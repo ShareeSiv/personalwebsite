@@ -11,3 +11,8 @@ manage.py
 static/
 staticfiles/
 manage.py
+*.mypy_cache/
+*.pyc
+__pycache__
+db.sqlite3
+requirements.txt
